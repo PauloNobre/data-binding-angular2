@@ -77,5 +77,10 @@
     
     <app-input-property [nomeCurso]="nomeDoCurso"></app-input-property>
     <!--<app-input-property [nome]="nomeDoCurso"></app-input-property>-->
+
+    <app-output-property [valor]="valorInicial"
+      (mudouValor)="onMudouValor($event)"></app-output-property>
+    <!-- <app-output-property valor="10"></app-output-property> -->
+
   </article>
 </section>
