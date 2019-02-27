@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  valor: number = 15;
   title = 'app';
+  deletarCiclo: boolean = false;
+
+  mudarValor() {
+    this.valor++;
+  }
+
+  destruirCiclo() {
+    this.deletarCiclo = !this.deletarCiclo;
+  }
 }
